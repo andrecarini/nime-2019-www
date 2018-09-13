@@ -1,4 +1,6 @@
-> Lazy-loading do embed do YouTube: imagem de placeholder, carrega vídeo quando usuário clica no placeholder
 > Analytics tracking, talvez Facebook também
-> Fade de imagens no hero banner
-> Logotipo trabalhado, com variações para teste
+> Adicionar favicons
+> Ativar gzip
+
+https://medium.com/outsystems-experts/how-to-achieve-60-fps-animations-with-css3-db7b98610108
+https://caniuse.com/#feat=will-change

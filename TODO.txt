@@ -1,0 +1,4 @@
+> Lazy-loading do embed do YouTube: imagem de placeholder, carrega vídeo quando usuário clica no placeholder
+> Analytics tracking, talvez Facebook também
+> Fade de imagens no hero banner
+> Logotipo trabalhado, com variações para teste

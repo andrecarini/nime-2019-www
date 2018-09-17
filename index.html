@@ -12,14 +12,43 @@
   </head>
 
   <body class="landing">
+    
+    <!-- Mobile Header -->
+      <div id="mobileNavWrapper">
+        
+        <a id="navButton" aria-hidden="true">
+          <span class="text">
+            NAVIGATION
+          </span>
+          <span class="menu_icon">
+          </span>
+        </a>
+
+        <div id="navPanel">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="schedule.html">Schedule</a></li>
+              <li><a href="location.html">Location</a></li>
+              <li><a href="#">Comittee</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Submit</a></li>
+            </ul>
+          </nav>
+          <img class="panel-logo" src="images/logos/NIME_logotipo_2019_mirrored.svg" />
+        </div>
+        
+      </div>
+    
     <div id="page-wrapper">
 
       <!-- Header -->
-        <header id="header" class="alt">
-          <img class="logo" src="images/logos/NIME2019_v5_short_optimized.svg" />
+        <header id="header_fixed" class="header alt">
+          <img class="logo" src="images/logos/NIME_logotipo_2019.svg" />
           <nav id="nav">
             <ul>
-              <li><a href="news.html">News &amp; Updates</a></li>
               <li><a href="schedule.html">Schedule</a></li>
               <li><a href="location.html">Location</a></li>
               <li><a href="#">Comittee</a></li>
@@ -30,14 +59,29 @@
             </ul>
           </nav>
         </header>
-
+      
+        <header id="header_sticky" class="header sticky" aria-hidden="true">
+          <img class="logo" src="images/logos/NIME_logotipo_2019.svg" />
+          <nav id="nav">
+            <ul>
+              <li><a href="schedule.html">Schedule</a></li>
+              <li><a href="location.html">Location</a></li>
+              <li><a href="#">Comittee</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#" class="button">Register</a></li>
+              <li><a href="#" class="button">Submit</a></li>
+            </ul>
+          </nav>
+        </header>
+      
       <!-- Banner -->
         <section id="banner" class="hero-left">
           <div class="hero-bg-noise"></div>
           <div id="hero-bg-img-wrapper"></div>
           <div class="hero-text">
             <h2>New Interfaces for Musical Expression</h2>
-            <h3>Universidade Federal do Rio Grande do Sul  &#8226  Porto Alegre, Brazil  &#8226  7-10 June, 2019</h3>
+            <h3>Universidade Federal do Rio Grande do Sul <br> Porto Alegre, Brazil <br> 7-10 June, 2019</h3>
           </div>
         </section>
 
@@ -58,7 +102,7 @@
               </div>
             </div>
             
-            <div class="flex-col-phi-smaller">
+            <div class="flex-col-phi-smaller text">
               <p>New Interfaces for Musical Expression, also known as NIME, is an international conference dedicated to scientific research on the development of new technologies and their role in musical expression and artistic performance. Researchers and musicians from all over the world gather to share their <a href="schedule.html">knowledge and late-breaking work</a> on new musical interface design.</p>
               <p>The conference began as a workshop in 2001 and, since then, has been held annually around the world. The 19th edition of NIME will be hosted at the <a href="location.html">Universidade Federal do Rio Grande do Sul</a> in Porto Alegre, Brazil, and will hold lectures, installations, concerts, and workshops.</p>
             </div>
@@ -162,8 +206,6 @@
           
           <ul class="copyright">
             <li>&copy; NIME. All rights reserved.</li>
-            <li>Designed by <a href="mailto:andre.carini@inf.ufrgs.br">André Carini</a> and <a href="mailto:npbrito@inf.ufrgs.br">Natália Brito</a></li>
-            <li>Powered by <a href="http://html5up.net">HTML5 UP</a></li>
           </ul>
         </footer>
 

@@ -10,7 +10,7 @@ var youtube_button = document.getElementById('yt-button');
 		var img = this;
 		setTimeout( function() {
 		  img.style.opacity = '100';
-		}, 250);
+		}, 1500);
 	}
 	
 	youtube_placeholder_img.setAttribute( "class", "yt-thumbnail" );
@@ -26,10 +26,9 @@ var youtube_button = document.getElementById('yt-button');
 	banner_bg_img.onload = function() {
 		setTimeout( function() {
 		  banner_bg_img_wrapper.style.opacity = '100';
-		}, 250);
+		}, 1500);
 	}
 	
-	banner_bg_img.setAttribute( "class", "" );
 	banner_bg_img.setAttribute( "src", "images/photos/hero_bg_antigo.jpg" );
 
 	banner_bg_img_wrapper.appendChild( banner_bg_img );
@@ -60,35 +59,61 @@ var youtube_button = document.getElementById('yt-button');
 		this.removeEventListener( "click", _youtubeLazyLoad, true );
 		this.appendChild( iframe );
 	}, true);
-// --------	
+// --------
 
-/*
-// Button.
-	$(
-		'<div id="navButton">' +
-			'<a href="#navPanel" class="toggle"></a>' +
-		'</div>'
-	)
-		.appendTo($body);
+// Show hide sticky header on scrolling past the hero banner
+	
+	var currentScrollY = 0;
+	var header_is_sticky = 0;
+	var hero_banner_height = document.getElementById('banner').scrollHeight;
+	var header_sticky = document.getElementById('header_sticky');
 
-// Panel.
-	$(
-		'<div id="navPanel">' +
-			'<img class="panel-logo" src="images/NIME2019_v5_short_optimized.svg" />' +
-			'<nav>' +
-				$('#nav').navList() +
-			'</nav>' +
-		'</div>'
-	)
-		.appendTo($body)
-		.panel({
-			delay: 500,
-			hideOnClick: true,
-			hideOnSwipe: true,
-			resetScroll: true,
-			resetForms: true,
-			side: 'left',
-			target: $body,
-			visibleClass: 'navPanel-visible'
-		});
-		*/
+	document.addEventListener( "scroll", function() {
+		currentScrollY = window.pageYOffset;
+		if (header_is_sticky == 0 && currentScrollY > hero_banner_height) {
+    		header_is_sticky = 9;
+			header_sticky.style.display = 'block';
+			setTimeout( function() {
+				header_sticky.classList.add("visible");
+				setTimeout( function() {
+					header_is_sticky = 1;	
+				}, 220);
+			}, 20);
+  		} else if (header_is_sticky == 1 && currentScrollY <= hero_banner_height) {
+    		header_is_sticky = 9;
+			header_sticky.classList.remove("visible");
+			setTimeout( function() {
+				header_sticky.style.display = 'none';
+				header_is_sticky = 0;
+			}, 220);
+  		}
+	}, false);
+
+// --------
+
+// Mobile navigation menu
+
+	var navButton = document.getElementById('navButton');
+	var navPanel = document.getElementById('navPanel');
+	var panel_is_visible = 0;
+
+	navButton.addEventListener( "click", function() {
+		if (panel_is_visible == 0) {
+			panel_is_visible = 9;
+			navPanel.style.display = 'flex';
+			setTimeout( function() {
+				navPanel.classList.add("visible");
+				setTimeout( function() {
+					panel_is_visible = 1;
+				}, 400);
+			}, 20);
+				
+		} else if (panel_is_visible == 1) {
+			panel_is_visible = 9;
+			navPanel.classList.remove("visible");
+			setTimeout( function() {
+		  		navPanel.style.display = 'none';
+				panel_is_visible = 0;
+			}, 400);
+		}
+	}, false);

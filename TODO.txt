@@ -1,6 +1,0 @@
-> Analytics tracking, talvez Facebook também
-> Adicionar favicons
-> Ativar gzip
-
-https://medium.com/outsystems-experts/how-to-achieve-60-fps-animations-with-css3-db7b98610108
-https://caniuse.com/#feat=will-change

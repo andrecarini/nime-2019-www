@@ -4,6 +4,7 @@ var youtube_spinner = document.getElementById('yt-spinner');
 var youtube_button = document.getElementById('yt-button');
 
 // Delayed loading of the embed thumbnail
+if (youtube_placeholder) {
 	var youtube_placeholder_img = document.createElement( "img" );
 
 	youtube_placeholder_img.onload = function() {
@@ -17,10 +18,13 @@ var youtube_button = document.getElementById('yt-button');
 	youtube_placeholder_img.setAttribute( "src", "images/photos/UFRGS-campus-centro.jpg" );
 
 	youtube_placeholder.appendChild( youtube_placeholder_img );
+};
 // --------	
 
 // Delayed loading of the hero banner background
-  var banner_bg_img_wrapper = document.getElementById('hero-bg-img-wrapper')
+var banner_bg_img_wrapper = document.getElementById('hero-bg-img-wrapper')
+
+if (banner_bg_img_wrapper) {
   var banner_bg_img = document.createElement( "img" );
 
 	banner_bg_img.onload = function() {
@@ -32,9 +36,11 @@ var youtube_button = document.getElementById('yt-button');
 	banner_bg_img.setAttribute( "src", "images/photos/hero_bg_antigo.jpg" );
 
 	banner_bg_img_wrapper.appendChild( banner_bg_img );
+};
 // --------
 
 // Lazy loading of the video iframe on user click
+if (youtube_welcome) {
 	youtube_welcome.addEventListener( "click", function _youtubeLazyLoad() {
 		var iframe = document.createElement( "iframe" );
 
@@ -59,6 +65,7 @@ var youtube_button = document.getElementById('yt-button');
 		this.removeEventListener( "click", _youtubeLazyLoad, true );
 		this.appendChild( iframe );
 	}, true);
+};
 // --------
 
 // Show hide sticky header on scrolling past the hero banner

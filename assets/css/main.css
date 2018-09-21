@@ -3604,35 +3604,19 @@
 
 /* Logotype */
 .alt .logo {
-  padding: 1em 0em 0em 2em;
-  height: 5.5em;
+  padding: 1em;
+  height: 4.5em;
 }
-.alt .logo-anchor {
-  display: inline-block;
-  border: none;
-}
-
 .logo {
   height: 100%;
   padding: 0.7em;
 }
-
 .panel-logo {
   margin-top: 1em;
   width: 8em;
 }
-.panel-logo-anchor {
-  border: none;
-}
-
 .banner-logo {
   display: none; 
-}
-
-.sticky-logo-anchor {
-  display: block;
-  height: 100%;
-  width: 5em;
 }
 
 /* Sponsors */

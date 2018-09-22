@@ -3665,6 +3665,7 @@
   display: block;
   height: 100%;
   width: 5em;
+  border: none;
 }
 
 /* Sponsors */

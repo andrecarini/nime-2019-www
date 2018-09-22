@@ -3700,6 +3700,7 @@
   cursor: pointer;
   overflow: hidden;
   margin-bottom: 1em;
+  border: none;
 }
 
   .cards .box .text {

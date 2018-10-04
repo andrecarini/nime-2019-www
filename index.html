@@ -7,6 +7,16 @@
     <title>NIME 2019</title>
     <meta name="viewport"  content="width=device-width, initial-scale=1, user-scalable=no" />
     
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126620304-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-126620304-1');
+      </script>
+    
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" >
   </head>
@@ -17,26 +27,29 @@
       <div id="mobileNavWrapper">
         
         <a id="navButton" aria-hidden="true">
-          <span class="text">NAVIGATION</span>
           <span class="menu_icon">
+            <span class="top bar"></span>
+            <span class="middle bar"></span>
+            <span class="bottom bar"></span>
           </span>
         </a>
 
         <div id="navPanel">
+          <a class="panel-logo-anchor" href="index.html">
+            <img class="panel-logo" src="images/logos/top2_optimized.svg" />
+          </a>
           <nav>
             <ul>
+              <li class="cta-participate"><a href="participate.html">Participate</a></li>
               <li><a href="index.html">Home</a></li>
               <li><a href="schedule.html">Schedule</a></li>
               <li><a href="location.html">Location</a></li>
               <li><a href="committee.html">Committee</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a href="participate.html">Participate</a></li>
             </ul>
           </nav>
-          <a class="panel-logo-anchor" href="index.html">
-            <img class="panel-logo" src="images/logos/top2_optimized.svg" />
-          </a>
+          
         </div>
         
       </div>
@@ -44,48 +57,51 @@
     <div id="page-wrapper">
 
       <!-- Header -->
-        <header id="header_fixed" class="header alt">
+        <header id="header_fixed" class="header fixed alt">
           <a class="logo-anchor" href="index.html">
             <img class="logo" src="images/logos/top2_optimized.svg" />
           </a>
           <nav id="nav">
             <ul>
+              <li><a class="button" href="participate.html">Participate</a></li>
               <li><a href="index.html">Home</a></li>
               <li><a href="schedule.html">Schedule</a></li>
               <li><a href="location.html">Location</a></li>
               <li><a href="committee.html">Committee</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a class="button" href="participate.html">Participate</a></li>
             </ul>
           </nav>
         </header>
       
         <header id="header_sticky" class="header sticky" aria-hidden="true">
-          <a class="sticky-logo-anchor" href="index.html">
-            <img class="logo" src="images/logos/top2_optimized.svg" />
-          </a>
           <nav id="nav">
             <ul>
+              <li><a class="button" href="participate.html">Participate</a></li>
               <li><a href="index.html">Home</a></li>
               <li><a href="schedule.html">Schedule</a></li>
               <li><a href="location.html">Location</a></li>
               <li><a href="committee.html">Committee</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a class="button" href="participate.html">Participate</a></li>
             </ul>
           </nav>
+          <a class="sticky-logo-anchor" href="index.html">
+            <img class="logo" src="images/logos/top2_optimized.svg" />
+          </a>
         </header>
       
       <!-- Banner -->
-        <section id="banner" class="hero-center">
+        <section id="banner" class="hero-left">
           <div class="hero-bg-noise"></div>
           <div id="hero-bg-img-wrapper"></div>
           <div class="hero-text">
             <h2>New Interfaces for Musical Expression</h2>
             <h3>Universidade Federal do Rio Grande do Sul <br> Porto Alegre, Brazil <br> 3-6 June, 2019</h3>
           </div>
+          <a class="hero-logo-anchor" href="index.html">
+            <img class="hero-logo" src="images/logos/top2_optimized.svg" />
+          </a>
         </section>
 
       <!-- Main -->
@@ -96,7 +112,9 @@
             <div id="youtube-video-welcome" class="flex-col-phi-bigger youtube-embed">
               <div id="youtube-video-welcome-placeholder" class="youtube-placeholder flex">
                 <div class="yt-noise"></div>
-                <img class="yt-logo" src="images/vectors/YouTube_full-color_icon_(2017).svg" id="yt-button" />
+                <div class="yt-logo-wrapper">
+                  <img class="yt-logo" src="images/vectors/YouTube_full-color_icon_(2017).svg" id="yt-button" />
+                </div>
                 <div class="loader" id="yt-spinner">
                   <svg class="circular" viewBox="25 25 50 50">
                     <circle class="path" cx="50" cy="50" r="15" fill="none" stroke-width="3" stroke-miterlimit="10"/>
@@ -187,16 +205,9 @@
           <h2>Sign up to the mailing list</h2>
           <p class="spacing-bottom-2em">Receive info and updates about the event directly in your inbox.</p>
 
-          <form action="https://ufrgs.us19.list-manage.com/subscribe/post?u=e0b34780b1ea024f22d49558e&id=bac5dd2998" method="post" name="mc-embedded-subscribe-form" target="_blank">
-            <div class="row gtr-50 gtr-uniform">
-              <div class="col-8 col-12-mobilep">
-                <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="Email Address" />
-              </div>
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e0b34780b1ea024f22d49558e_bac5dd2998" tabindex="-1" value=""></div>
-              <div class="col-4 col-12-mobilep">
-                <input type="submit" value="Sign Up" class="fit" name="subscribe" id="mc-embedded-subscribe" />
-              </div>
-            </div>
+          <form class="newsletter-signup" action="https://ufrgs.us19.list-manage.com/subscribe/post?u=e0b34780b1ea024f22d49558e&id=bac5dd2998" method="post" name="mc-embedded-subscribe-form" target="_blank">
+            <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="Email Address" />
+            <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" />
           </form>
 
         </section>

@@ -7,6 +7,16 @@
     <title>NIME 2019</title>
     <meta name="viewport"  content="width=device-width, initial-scale=1, user-scalable=no" />
     
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126620304-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-126620304-1');
+    </script>
+    
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" >
   </head>
@@ -17,28 +27,29 @@
       <div id="mobileNavWrapper">
         
         <a id="navButton" aria-hidden="true">
-          <span class="text">
-            NAVIGATION
-          </span>
           <span class="menu_icon">
+            <span class="top bar"></span>
+            <span class="middle bar"></span>
+            <span class="bottom bar"></span>
           </span>
         </a>
 
         <div id="navPanel">
+          <a class="panel-logo-anchor" href="index.html">
+            <img class="panel-logo" src="images/logos/top2_optimized.svg" />
+          </a>
           <nav>
             <ul>
+              <li class="cta-participate"><a href="participate.html">Participate</a></li>
               <li><a href="index.html">Home</a></li>
               <li><a href="schedule.html">Schedule</a></li>
               <li><a href="location.html">Location</a></li>
               <li><a href="committee.html">Committee</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a href="participate.html">Participate</a></li>
             </ul>
           </nav>
-          <a class="panel-logo-anchor" href="index.html">
-            <img class="panel-logo" src="images/logos/top2_optimized.svg" />
-          </a>
+          
         </div>
         
       </div>
@@ -92,13 +103,13 @@
           <section class="box no-margin">
             
             <div class="text">
-              <h2>CALL FOR PARTICIPATION</h2>
+              <h2>CALL FOR SUBMISSIONS</h2>
 <br>
               <p>We would like to invite you to be part of NIME 2019 - The International Conference on New Interfaces for Musical Expression.</p>
 
-              <p>In its nineteenth edition, NIME crosses the Equatorial line, happening for the first time in Latin America, being held at the Federal University of Rio Grande do Sul, in Porto Alegre / Brazil. The theme of this conference edition is BLENDING DIMENSIONS: Inspiration and Challenge. This theme aims at inspiring the most unusual musical interactions in the space of possibilities that lies between what is apparent and what is hidden. NIME 2019 welcomes those that are willing to take risks in creative processes, fostering the connections between humans and computers, technology and art, as well as the hemispheres of Earth.</p>
+              <p>In its nineteenth edition, NIME crosses the Equatorial line, happening for the first time in South America, being held at the Federal University of Rio Grande do Sul, in Porto Alegre, Brazil. The theme of this conference edition is BLENDING DIMENSIONS: Inspiration and Challenge. This theme aims at inspiring the most unusual musical interactions in the space of possibilities that lies between what is apparent and what is hidden. NIME 2019 welcomes those that are willing to take risks in creative processes, fostering the connections between humans and computers, technology and art, as well as the hemispheres of Earth.</p>
 
-              <p>The call for participation continues  the conference structure developed in  previous NIME editions. We invite submission of new works in the following categories:</p>
+              <p>We invite submissions of new works in the following categories:</p>
             <br>
               <ul>
                 <li>Paper (oral/poster/demo)</li>
@@ -107,9 +118,9 @@
                 <li>Workshop</li>
               </ul>
 
-            <br>
+<br>
               <h4>IMPORTANT DATES:</h4>
-
+<br>
               <ul>
                 <li>20 January 2019: Paper, Poster, Demo-paper, Music, and Installation submission deadline</li>
                 <li>27 January 2019: Final submission upload deadline</li>
@@ -122,57 +133,22 @@
                 <li>7 June 2019: The unconference</li>
               </ul>
 
-              <p>The online submission system will be open soon at <a href="http://ufrgs.br/nime2019"> http://ufrgs.br/nime2019</a></p>
+              <p>The online submission system will be open at <a href="http://ufrgs.br/nime2019"> http://ufrgs.br/nime2019</a></p>
               <p>Templates for paper and poster proposals are available in <a href="paper_templates/NIME-PapersTemplate-LaTeX-2019.zip"> Latex (preferable)</a> and <a href="paper_templates/NIME-PapersTemplate-Word-2019.zip">Word </a>formats.</p>
               <br>
               <br>
               <h4>IMPORTANT NOTES:</h4>
-
+<br>
               <ol>
-                <li>At least one person (author, performer, artist) MUST be registered for the conference for their piece/paper to be included in the program.</li>
-
-                <li>The Non-paper demo and workshop program deadlines do not coincide with the main submission deadline!</li>
-
-                <li>Demonstration papers will be presented during a poster session. It is also possible to submit a proposal for a demonstration which will not be accompanied by a paper publication – for additional info on non-paper demonstrations, please see the call for Non-Paper Workshops and Demos category below. All demonstration paper submissions must include a video.</li>
-
-                <li><b>All paper category submissions must be completely anonymized, including, but not limited to authors, references, and specific project names that can clearly identify the author(s).</b></li>
-
+                <li><span style="font-weight:bold">All paper category submissions must be completely anonymized, including, but not limited to authors, references, and specific project names that can clearly identify the author(s).</span> </li>
+                <li>At least one person (author, performer, artist) MUST be registered for the conference for their piece/paper to be included in the program.  Papers for which no author registers - and/or is not present at the conference - will be removed from the proceedings.</li>
+                <li>Demonstration papers will be presented during a poster session. It is also possible to submit a proposal for a demonstration which will not be accompanied by a paper publication. For additional info on non-paper demonstrations, please see the call for <a href="#non-paper">Non-Paper Workshops and Demos</a> category below. All demonstration paper submissions must include a video.</li>
                 <li>A manuscript submitted for review cannot be already under review for publication elsewhere or be submitted for a second review elsewhere while under review for NIME 2019.</li>
-
-                <li>Accepted papers will be published online as part of the conference proceedings on the conference website and will be archived online to be tracked by citation tools. At least one author for each accepted paper is expected to register for and attend the conference. Papers for which no author registers - and/or is not present at the conference - will be removed from the proceedings.</li>
+                <li>Accepted papers will be published online as part of the conference proceedings on the conference website and will be archived online to be tracked by citation tools.</li>
               </ol>
             
-              <br>
-              <h4>PAPER REVIEW PROCESS</h4>
-
-              <p>All paper submissions will be subjected to a rigorous double-blind peer review process by an international committee of experts. All of the submitted papers should demonstrate rigorous research methodology and evaluated according to the following criteria:</p>
-              
-              <ul>
-                <li>novelty</li>
-                <li>scholarly/scientific quality</li>
-                <li>appropriateness of topic</li>
-                <li>importance</li>
-                <li>readability and paper organization</li>
-              </ul>
-
-              <h4>The process is as follows:</h4>
-
-              <ul>
-                <li>Each paper submission will be assigned to at least 3 reviewers for evaluation.</li>
-                <li>A meta-reviewer will moderate a discussion amongst reviewers, write a summary review, and recommend whether to accept the paper.</li>
-                <li>The paper committee will make the final decision on paper acceptance and will inform the author(s) of their decision along with the reviewers’ comments.</li>
-              </ul>
-
-              <p>Please note this review process is double-blind, meaning reviewers remain anonymous to the authors and vice-versa. It is expected that authors respect <a href="http://www.nime.org/archives/publication-ethics-and-malpractice-statement/">NIME’s Publication ethics and malpractice statement.</a></p>
-
-            <br>
-            <br>
-              <h4>DEADLINE EXTENSION</h4>
-
-              <p>There will be <b>NO EXTENSION</b> to the paper submission deadline. However, authors of registered papers on or before January 20th will be allowed to upload new versions of their papers (in PDF format) until January 27th (23h59 American Samoa time zone). No other changes will be possible (i.e. authors will not be able to change title, abstract, authors, keywords/topics, or other metadata). No registration of new papers will be possible after January 20th, and no submission of new versions of registered papers will be possible after January 27th.</p>
-
-              <br>
-              <br>
+<br>
+<br>
               <h3>SCIENTIFIC PROGRAM</h3>
 <br>
               <h4>Call for Papers</h4>
@@ -214,16 +190,46 @@
                 <li>Pedagogical perspectives or reports on student projects in the framework of NIME-related courses</li>
                 <li>Practice-based research approaches/methodologies/criticism</li>
               </ul>
+<br>
+<br>
+              <h4>PAPER REVIEW PROCESS</h4>
 
+              <p>All paper submissions will be subjected to a rigorous double-blind peer review process by an international committee of experts. All of the submitted papers should demonstrate rigorous research methodology and evaluated according to the following criteria:</p>
+              
+              <ul>
+                  <li>novelty</li>
+                  <li>scholarly/scientific quality</li>
+                  <li>appropriateness of topic</li>
+                  <li>importance</li>
+                  <li>readability and paper organization</li>
+              </ul>
+              
+              <h4>The process is as follows:</h4>
+              
+              <ul>
+                  <li>Each paper submission will be assigned to at least 3 reviewers for evaluation.</li>
+                  <li>A meta-reviewer will moderate a discussion amongst reviewers, write a summary review, and recommend whether to accept the paper.</li>
+                  <li>The paper committee will make the final decision on paper acceptance and will inform the author(s) of their decision along with the reviewers’ comments.</li>
+              </ul>
+              
+              <p>Please note this review process is double-blind, meaning reviewers remain anonymous to the authors and vice-versa. It is expected that authors respect <a href="http://www.nime.org/archives/publication-ethics-and-malpractice-statement/">NIME’s Publication ethics and malpractice statement.</a></p>
+              
+<br>
+<br>
+              <h4>DEADLINE EXTENSION</h4>
+
+              <p>There will be <b>NO EXTENSION</b> to the paper submission deadline. However, authors of registered papers on or before January 20th will be allowed to upload new versions of their papers (in PDF format) until January 27th (23h59 American Samoa time zone). No other changes will be possible (i.e. authors will not be able to change title, abstract, authors, keywords/topics, or other metadata). No registration of new papers will be possible after January 20th, and no submission of new versions of registered papers will be possible after January 27th.</p>
+              
+<br>
 <br>
 <br>
               <h3>ARTISTIC PROGRAM</h3>
 <br>
               <h4>Call for Music</h4>
-<br>
+              
               <p>We invite submission of proposals that showcase new interfaces for musical expression in composition and performance.  We look forward to receiving submissions that expand and reshape our understanding of NIME in the performance, conceptualization, and reception of music. We encourage submissions that respond to the conference theme of <b>BLENDING DIMENSIONS: Inspiration and Challenge.</b></p>
 
-              <p>Please contact the Music Chairs with any questions regarding the suitability of a potential NIME performance submission. We will consider submissions of existing works as well as proposals for new ones.</p>
+              <p>Please contact the <a href="mailto:music@nime2019.org">Music Chairs</a> with any questions regarding the suitability of a potential NIME performance submission. We will consider submissions of existing works as well as proposals for new ones.</p>
 
               <p>If a music submission is selected for performance at NIME, it is our expectation that the proposing artists will be available to perform the work on ANY day of the conference. The NIME 2019 organization is unable to consider requests for musical performances to happen on specific days of the conference.</p>
 
@@ -269,12 +275,12 @@
                 <li>A link to audio-visual documentation (if available). The documentation link should use an unrestricted streaming service, such as SoundCloud, Vimeo, or YouTube.</li>
               </ul>
 
-              <p>All installation category submissions must be anonymized to the extent possible, including, but not limited to authors, media credits, and specific project names that can clearly identify the author(s).</p>
 
               <h4>Installation Review Process</h4>
 
               <p>All installation submissions will be evaluated by a review panel according to the following criteria: originality, impact, creativity, technique, presentation, and feasibility.</p>
 
+              <a id="non-paper"></a>
               <br>
               <br>
               <h3>CALL FOR NON-PAPER WORKSHOPS &amp; DEMOS</h3>

@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>NIME 2019</title>
+    <meta name="viewport"  content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126620304-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-126620304-1');
+      </script>
+    
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700" >
+  </head>
+
+  <body class="landing">
+    
+    <!-- Mobile Header -->
+      <div id="mobileNavWrapper">
+        
+        <a id="navButton" aria-hidden="true">
+          <span class="menu_icon">
+            <span class="top bar"></span>
+            <span class="middle bar"></span>
+            <span class="bottom bar"></span>
+          </span>
+        </a>
+
+        <div id="navPanel">
+          <a class="panel-logo-anchor" href="index.html">
+            <img class="panel-logo" src="images/logos/top2_optimized.svg" />
+          </a>
+          <nav>
+            <ul>
+              <li class="cta-participate"><a href="participate.html">Participate</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="schedule.html">Schedule</a></li>
+              <li><a href="location.html">Location</a></li>
+              <li><a href="committee.html">Committee</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+        
+      </div>
+    
+    <div id="page-wrapper">
+
+      <!-- Header -->
+        <header id="header_sticky" class="header sticky visible always_visible" aria-hidden="true">
+          <div id="header-hero-backdrop" class="header_bg hero_backdrop" aria-hidden="true"></div>
+          <div id="header-page-backdrop" class="header_bg page_backdrop" aria-hidden="true"></div>
+          
+          <a class="sticky-logo-anchor" href="index.html">
+            <img class="logo" src="images/logos/top2_optimized.svg" />
+          </a>
+          <nav id="nav">
+            <ul>
+              <li><a class="button" href="participate.html">Participate</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="schedule.html">Schedule</a></li>
+              <li><a href="location.html">Location</a></li>
+              <li><a href="committee.html">Committee</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </header>
+      
+      <!-- Banner -->
+        <section id="short-banner" class="privacy">
+          <img id="short-banner-previewimg" data-highresurl="images/photos/short_banners/privacy.jpg" src="data:image/jpeg;base64,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" />
+          
+          <div class="hero-bg-noise"></div>
+          <header>
+            <h4>Privacy Policy</h4>
+            <h3>NIME 2019</h3>
+          </header>
+        </section>
+
+      <!-- Main -->
+        <section id="main" class="container content-page privacy-policy">
+
+          <section class="box no-margin">
+            
+            <div class="text">
+              <p>This Application collects some Personal Data from its Users.</p>
+
+              <h1>Owner and Data Controller</h1>
+
+              <p>NIME 2019
+              <br>Av. Paulo Gama, 110.
+              <br>Porto Alegre, RS, Brazil
+              <br>90040-060</p>
+              <p><b>Owner contact email:</b> webmaster@nime2019.org</p>
+
+              <h1>Types of Data collected</h1>
+
+              <p>
+              Among the types of Personal Data that this Application collects, by itself or through third parties, there are:
+              Cookies, Usage Data and email address.
+              </p>
+
+              <p>Complete details on each type of Personal Data collected are provided in the dedicated sections of this privacy policy or by specific explanation texts displayed prior to the Data collection. Personal Data may be freely provided by the User, or, in case of Usage Data, collected automatically when using this Application. Unless specified otherwise, all Data requested by this Application is mandatory and failure to provide this Data may make it impossible for this Application to provide its services. In cases where this Application specifically states that some Data is not mandatory, Users are free not to communicate this Data without consequences to the availability or the functioning of the Service. Users who are uncertain about which Personal Data is mandatory are welcome to contact the Owner. Any use of Cookies – or of other tracking tools – by this Application or by the owners of third-party services used by this Application serves the purpose of providing the Service required by the User, in addition to any other purposes described in the present document and in the Cookie Policy, if available.</p>
+              <p>Users are responsible for any third-party Personal Data obtained, published or shared through this Application and confirm that they have the third party's consent to provide the Data to the Owner.</p>
+
+              <h1>Mode and place of processing the Data</h1>
+
+              <h2>Methods of processing</h2>
+
+              <p>The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data.<br>The Data processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. In addition to the Owner, in some cases, the Data may be accessible to certain types of persons in charge, involved with the operation of this Application (administration, sales, marketing, legal, system administration) or external parties (such as third-party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by the Owner. The updated list of these parties may be requested from the Owner at any time.</p>
+
+              <h2>Legal basis of processing</h2>
+
+              <p>The Owner may process Personal Data relating to Users if one of the following applies:</p>
+              <ul>
+              <li>Users have given their consent for one or more specific purposes. Note: Under some legislations the Owner may be allowed to process Personal Data until the User objects to such processing (“opt-out”), without having to rely on consent or any other of the following legal bases. This, however, does not apply, whenever the processing of Personal Data is subject to European data protection law;</li>
+              <li>provision of Data is necessary for the performance of an agreement with the User and/or for any pre-contractual obligations thereof;</li>
+              <li>processing is necessary for compliance with a legal obligation to which the Owner is subject;</li>
+              <li>processing is related to a task that is carried out in the public interest or in the exercise of official authority vested in the Owner;</li>
+              <li>processing is necessary for the purposes of the legitimate interests pursued by the Owner or by a third party.</li>
+              </ul>
+              <p>In any case, the Owner will gladly help to clarify the specific legal basis that applies to the processing, and in particular whether the provision of Personal Data is a statutory or contractual requirement, or a requirement necessary to enter into a contract. </p>
+
+              <h2>Place</h2>
+
+              <p>The Data is processed at the Owner's operating offices and in any other places where the parties involved in the processing are located.<br><br>
+              Depending on the User's location, data transfers may involve transferring the User's Data to a country other than their own. To find out more about the place of processing of such transferred Data, Users can check the section containing details about the processing of Personal Data.</p>
+              <p>Users are also entitled to learn about the legal basis of Data transfers to a country outside the European Union or to any international organization governed by public international law or set up by two or more countries, such as the UN, and about the security measures taken by the Owner to safeguard their Data.<br><br>
+              If any such transfer takes place, Users can find out more by checking the relevant sections of this document or inquire with the Owner using the information provided in the contact section.</p>
+
+              <h2>Retention time</h2>
+
+              <p>Personal Data shall be processed and stored for as long as required by the purpose they have been collected for.</p>
+              <p>Therefore:</p>
+              <ul>
+              <li>Personal Data collected for purposes related to the performance of a contract between the Owner and the User shall be retained until such contract has been fully performed.</li>
+              <li>Personal Data collected for the purposes of the Owner’s legitimate interests shall be retained as long as needed to fulfill such purposes. Users may find specific information regarding the legitimate interests pursued by the Owner within the relevant sections of  this document or by contacting the Owner.</li>
+              </ul>
+              <p>The Owner may be allowed to retain Personal Data for a longer period whenever the User has given consent to such processing, as long as such consent is not withdrawn. Furthermore, the Owner may be obliged to retain Personal Data for a longer period whenever required to do so for the performance of a legal obligation or upon order of an authority.<br><br>
+              Once the retention period expires, Personal Data shall be deleted. Therefore, the right to access, the right to erasure, the right to rectification and the right to data portability cannot be enforced after expiration of the retention period.</p>
+
+              <h1>The purposes of processing</h1>
+
+              <p>
+              The Data concerning the User is collected to allow the Owner to provide its Services, as well as for the following purposes:
+              Analytics, Tag Management, Managing contacts and sending messages and Contacting the User.
+              </p>
+
+              <p>Users can find further detailed information about such purposes of processing and about the specific Personal Data used for each purpose in the respective sections of this document.</p>
+
+              <h1>Detailed information on the processing of Personal Data</h1>
+              <p>Personal Data is collected for the following purposes and using the following services:</p>
+
+              <h2>Analytics</h2>
+              <p>The services contained in this section enable the Owner to monitor and analyze web traffic and can be used to keep track of User behavior.</p>
+              <h3>Google Analytics (Google LLC)</h3>
+              <p>Google Analytics is a web analysis service provided by Google LLC (“Google”). Google utilizes the Data collected to track and examine the use of this Application, to prepare reports on its activities and share them with other Google services.<br>
+              Google may use the Data collected to contextualize and personalize the ads of its own advertising network.</p>
+              <p>
+              Personal Data collected:
+              Cookies and Usage Data.
+              </p>
+              <p>
+              Place of processing:
+              United States
+              –
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> – <a href="https://tools.google.com/dlpage/gaoptout?hl=en" target="_blank">Opt Out</a>.
+              Privacy Shield participant.
+              </p>
+
+              <h2>Contacting the User</h2>
+
+              <h3>Mailing list or newsletter (this Application)</h3>
+
+              <p>By registering on the mailing list or for the newsletter, the User’s email address will be added to the contact list of those who may receive email messages containing information of commercial or promotional nature concerning this Application. Your email address might also be added to this list as a result of signing up to this Application or after making a purchase.</p>
+
+              <p>
+              Personal Data collected:
+              email address.
+              </p>
+
+              <h2>Managing contacts and sending messages</h2>
+              <p>This type of service makes it possible to manage a database of email contacts, phone contacts or any other contact information to communicate with the User.<br>
+              These services may also collect data concerning the date and time when the message was viewed by the User, as well as when the User interacted with it, such as by clicking on links included in the message.</p>
+
+
+              <h3>MailChimp (The Rocket Science Group, LLC.)</h3>
+
+              <p>MailChimp is an email address management and message sending service provided by The Rocket Science Group, LLC.</p>
+
+              <p>
+              Personal Data collected:
+              email address.
+              </p>
+
+              <p>
+              Place of processing:
+              United States
+              –
+              <a href="https://mailchimp.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+              Privacy Shield participant.
+              </p>
+
+              <h2>Tag Management</h2>
+              <p>This type of service helps the Owner to manage the tags or scripts needed on this Application in a centralized fashion.<br>
+              This results in the Users' Data flowing through these services, potentially resulting in the retention of this Data.</p>
+
+              <h3>Google Tag Manager (Google LLC)</h3>
+
+              <p>Google Tag Manager is a tag management service provided by Google LLC.</p>
+
+              <p>
+              Personal Data collected:
+              Cookies and Usage Data.
+              </p>
+
+              <p>
+              Place of processing:
+              United States
+              –
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+              Privacy Shield participant.
+              </p>
+
+              <h1>The rights of Users</h1>
+
+              <p>Users may exercise certain rights regarding their Data processed by the Owner.</p>
+              <p>In particular, Users have the right to do the following:</p>
+
+              <ul>
+              <li><b>Withdraw their consent at any time.</b> Users have the right to withdraw consent where they have previously given their consent to the processing of their Personal Data.</li>
+              <li><b>Object to processing of their Data.</b> Users have the right to object to the processing of their Data if the processing is carried out on a legal basis other than consent. Further details are provided in the dedicated section below.</li>
+              <li><b>Access their Data.</b> Users have the right to learn if Data is being processed by the Owner, obtain disclosure regarding certain aspects of the processing and obtain a copy of the Data undergoing processing.</li>
+              <li><b>Verify and seek rectification.</b> Users have the right to verify the accuracy of their Data and ask for it to be updated or corrected.</li>
+              <li><b>Restrict the processing of their Data.</b> Users have the right, under certain circumstances, to restrict the processing of their Data. In this case, the Owner will not process their Data for any purpose other than storing it.
+              </li>
+              <li><b>Have their Personal Data deleted or otherwise removed.</b> Users have the right, under certain circumstances, to obtain the erasure of their Data from the Owner.</li>
+              <li><b>Receive their Data and have it transferred to another controller.</b> Users have the right to receive their Data in a structured, commonly used and machine readable format and, if technically feasible, to have it transmitted to another controller without any hindrance. This provision is applicable provided that the Data is processed by automated means and that the processing is based on the User's consent, on a contract which the User is part of or on pre-contractual obligations thereof.</li>
+              <li><b>Lodge a complaint.</b> Users have the right to bring a claim before their competent data protection authority.</li>
+              </ul>
+
+              <h2>Details about the right to object to processing</h2>
+              <p>Where Personal Data is processed for a public interest, in the exercise of an official authority vested in the Owner or for the purposes of the legitimate interests pursued by the Owner, Users may object to such processing by providing a ground related to their particular situation to justify the objection.</p>
+              <p>Users must know that, however, should their Personal Data be processed for direct marketing purposes, they can object to that processing at any time without providing any justification. To learn, whether the Owner is processing Personal Data for direct marketing purposes, Users may refer to the relevant sections of this document. </p>
+
+              <h2>How to exercise these rights</h2>
+              <p>Any requests to exercise User rights can be directed to the Owner through the contact details provided in this document. These requests can be exercised free of charge and will be addressed by the Owner as early as possible and always within one month.</p>
+
+              <h1>Additional information about Data collection and processing</h1>
+
+              <h2>Legal action</h2>
+              <p>
+              The User's Personal Data may be used for legal purposes by the Owner in Court or in the stages leading to possible legal action arising from improper use of this Application or the related Services.<br>The User declares to be aware that the Owner may be required to reveal personal data upon request of public authorities.
+              </p>
+
+              <h2>Additional information about User's Personal Data</h2>
+              <p>
+              In addition to the information contained in this privacy policy, this Application may provide the User with additional and contextual information concerning particular Services or the collection and processing of Personal Data upon request.
+              </p>
+
+              <h2>System logs and maintenance</h2>
+              <p>
+              For operation and maintenance purposes, this Application and any third-party services may collect files that record interaction with this Application (System logs) use other Personal Data (such as the IP Address) for this purpose.
+              </p>
+
+              <h2>Information not contained in this policy</h2>
+              <p>
+              More details concerning the collection or processing of Personal Data may be requested from the Owner at any time. Please see the contact information at the beginning of this document.
+              </p>
+
+              <h2>How “Do Not Track” requests are handled</h2>
+              <p>
+              This Application does not support “Do Not Track” requests.<br>To determine whether any of the third-party services it uses honor the “Do Not Track” requests, please read their privacy policies.
+              </p>
+
+              <h2>Changes to this privacy policy</h2>
+              <p>
+              The Owner reserves the right to make changes to this privacy policy at any time by giving notice to its Users on this page and possibly within this Application and/or - as far as technically and legally feasible - sending a notice to Users via any contact information available to the Owner. It is strongly recommended to check this page often, referring to the date of the last modification listed at the bottom. <br><br>
+              Should the changes affect processing activities performed on the basis of the User’s consent, the Owner shall collect new consent from the User, where required.
+              </p>
+
+              <h2>
+              Definitions and legal references
+              </h2>
+
+              <h3>Personal Data (or Data)</h3>
+              <p>Any information that directly, indirectly, or in connection with other information — including a personal identification number — allows for the identification or identifiability of a natural person.</p>
+
+              <h3>Usage Data</h3>
+              <p>Information collected automatically through this Application (or third-party services employed in this Application), which can include: the IP addresses or domain names of the computers utilized by the Users who use this Application, the URI addresses (Uniform Resource Identifier), the time of the request, the method utilized to submit the request to the server, the size of the file received in response, the numerical code indicating the status of the server's answer (successful outcome, error, etc.), the country of origin, the features of the browser and the operating system utilized by the User, the various time details per visit (e.g., the time spent on each page within the Application) and the details about the path followed within the Application with special reference to the sequence of pages visited, and other parameters about the device operating system and/or the User's IT environment.</p>
+
+              <h3>User</h3>
+              <p>The individual using this Application who, unless otherwise specified, coincides with the Data Subject.</p>
+
+              <h3>Data Subject</h3>
+              <p>The natural person to whom the Personal Data refers.</p>
+
+              <h3>Data Processor (or Data Supervisor)</h3>
+              <p>The natural or legal person, public authority, agency or other body which processes Personal Data on behalf of the Controller, as described in this privacy policy.</p>
+
+              <h3>Data Controller (or Owner)</h3>
+              <p>The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of Personal Data, including the security measures concerning the operation and use of this Application. The Data Controller, unless otherwise specified, is the Owner of this Application.</p>
+
+              <h3>
+              This Application
+              </h3>
+              
+              <p>The means by which the Personal Data of the User is collected and processed.</p>
+
+              <h4>Service</h4>
+              <p>The service provided by this Application as described in the relative terms (if available) and on this site/application.</p>
+
+              <h4>European Union (or EU)
+              </h4>
+              <p>Unless otherwise specified, all references made within this document to the European Union include all current member states to the European Union and the European Economic Area.
+              </p>
+
+              <h4>Cookies</h4>
+              <p>Small sets of data stored in the User's device.</p>
+
+              <hr>
+
+              <h4>Legal information</h4>
+              <p>This privacy statement has been prepared based on provisions of multiple legislations, including Art. 13/14 of Regulation (EU) 2016/679 (General Data Protection Regulation).</p>
+              <p>This privacy policy relates solely to this Application, if not stated otherwise within this document.</p>
+
+              <p>
+              Latest update: October 19, 2018
+              </p>
+            </div>
+          </section>
+        </section>
+
+      <!-- Footer -->
+        <footer id="footer">
+          <ul class="sponsors flex wrap center-horizontally">
+            <li><a href="https://www.ufrgs.br/"                 ><img src="images/logos/LOGO_UFRGS_vertical_azul.png" /></a></li>
+            <li><a href="https://www.ufrgs.br/institutodeartes" ><img src="images/logos/ia.png"                       /></a></li>
+            <li><a href="https://www.inf.ufrgs.br/"             ><img src="images/logos/inf.png"                      /></a></li>
+            <li><a href="https://www.inf.ufrgs.br/lcm/"         ><img src="images/logos/LCM_transparente.png"         /></a></li>
+            <li><a href="http://www.ufrgs.br/musicaeletronica/" ><img src="images/logos/CME_transparente.png"         /></a></li>
+          </ul>
+          
+          <div class="copyright flex vertical">
+            <div class="links flex space-between wrap">
+              <div>
+                <p>&copy; NIME 2019.</p>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="contact.html">Contact</a>
+              </div>
+              
+              <p>Developed by <a href="mailto:andre.carini@inf.ufrgs.br">André Carini</a></p>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+      <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

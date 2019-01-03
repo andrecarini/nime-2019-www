@@ -15,7 +15,7 @@ if (youtube_placeholder) {
 	}
 	
 	youtube_placeholder_img.setAttribute( "class", "yt-thumbnail" );
-	youtube_placeholder_img.setAttribute( "src", "images/photos/UFRGS-campus-centro.jpg" );
+	youtube_placeholder_img.setAttribute( "src", "images/photos/HomepageYouTubeEmbed_Thumbnail_Full.jpg" );
 
 	youtube_placeholder.appendChild( youtube_placeholder_img );
 }
@@ -171,6 +171,51 @@ if (short_hero_banner && header_hero_backdrop && header_page_backdrop) {
 			setTimeout( function() {
 				header_scrolled = 0;
 			}, 220);
+  		}
+	}, false);
+}
+
+// --------
+
+// Show/hide CFP submission sticky header
+
+var submissionCTA = document.getElementById('submissionCTA-sticky');
+var submissionCTA_non_sticky = document.getElementById('submissionCTA-flow');
+
+if (submissionCTA && submissionCTA_non_sticky) {
+	var distanceToTop = submissionCTA_non_sticky.getBoundingClientRect().top;
+	var header_is_shown = 0;
+	
+	if (distanceToTop < 0) {
+		header_is_shown = 9;
+			submissionCTA.style.display = 'flex';
+			setTimeout( function() {
+				submissionCTA.style.opacity = 1;
+				setTimeout( function() {
+					header_is_shown = 1;
+				}, 750);
+			}, 100);
+	}
+
+	document.addEventListener( "scroll", function() {
+		distanceToTop = submissionCTA_non_sticky.getBoundingClientRect().top;
+		
+		if (header_is_shown == 0 && distanceToTop < 0) {
+    		header_is_shown = 9;
+			submissionCTA.style.display = 'flex';
+			setTimeout( function() {
+				submissionCTA.style.opacity = 1;
+				setTimeout( function() {
+					header_is_shown = 1;
+				}, 750);
+			}, 100);
+  		} else if (header_is_shown == 1 && distanceToTop >= 0) {
+    		header_is_shown = 9;
+			submissionCTA.style.opacity = 0;
+			setTimeout( function() {
+				header_is_shown = 0;
+				submissionCTA.style.display = 'none';
+			}, 850);
   		}
 	}, false);
 }

@@ -11,8 +11,8 @@ function httpGetAsync(theUrl, callback) {
 
 function setUpCountdown() {
 	
-	var sticky = document.getElementById("countdownSticky");
-	var flow   = document.getElementById("countdownFlow");
+	sticky = document.getElementById("countdownSticky");
+	flow   = document.getElementById("countdownFlow");
 	
 	//httpGetAsync("http://www.ufrgs.br/nime2019/assets/time", function(response) {
 	httpGetAsync("https://andrecarini.github.io/nime-2019-www/assets/time", function(response) {

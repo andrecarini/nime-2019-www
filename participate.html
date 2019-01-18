@@ -8,7 +8,7 @@
     <meta name="viewport"  content="width=device-width, initial-scale=1, user-scalable=no" />
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126620304-1"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126620304-1"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -17,33 +17,26 @@
         gtag('config', 'UA-126620304-1');
       </script>
     
+    <!-- Facebook Pixel Code -->
+      <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '567859606975379');
+        fbq('track', 'PageView');
+        fbq('track', 'ViewContent');
+      </script>
+      <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=567859606975379&ev=PageView&noscript=1"/>
+      </noscript>
+    
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700" >
-
-    <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '567859606975379');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=567859606975379&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
-
-
-    <script>
-        fbq('track', 'ViewContent');
-    </script>
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700" />
     
     <meta property="og:url"                content="http://www.ufrgs.br/nime2019" />
@@ -116,6 +109,7 @@
       <!-- Submission link -->
       <a id="submissionCTA-sticky" class="submissionCTA sticky" href="https://new.precisionconference.com/submissions">
         <span class="full-text">Upload your submission <span>here</span></span>
+        <span class="full-text countdown" id="countdownSticky"></span>
         <span class="shortened-text">Submit</span>
       </a>
       
@@ -139,6 +133,7 @@
             
             <a class="submissionCTA flow" id="submissionCTA-flow" href="https://new.precisionconference.com/submissions">
               <span>Upload your submission <span>here</span></span>
+              <span class="full-text countdown" id="countdownFlow"></span>
             </a>
             
             <p>We invite submissions of new works in the following categories:</p>
@@ -354,6 +349,7 @@
                 <div class="subtitle">
                   <h4>CALL FOR NON-PAPER WORKSHOPS &amp; DEMOS</h4>
                   <p>NIME 2019 welcomes the submission of workshop and demo proposals that are not accompanied by a paper. These specialized workshops may be in any area of the NIME themes or topics.</p>
+                  <p style="color: red;">The online submission system for <b>NON-PAPER Workshops &amp; Demos</b> will be open from <b>Febrary 1st to March 1st</b>.</p>     
                 </div>
               </header>
 
@@ -471,6 +467,7 @@
 
     <!-- Scripts -->
       <script src="assets/js/main.js"></script>
+      <script src="assets/js/countdown.js"></script>
 
   </body>
 </html>

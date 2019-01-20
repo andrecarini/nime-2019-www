@@ -11,7 +11,6 @@ function httpGetAsync(theUrl, callback) {
 
 function setUpCountdown() {
 	
-	sticky = document.getElementById("countdownSticky");
 	flow   = document.getElementById("countdownFlow");
 	
 	httpGetAsync("http://www.ufrgs.br/nime2019/assets/time", function(response) {
@@ -75,7 +74,6 @@ function setUpCountdown() {
 			}
 			
 			flow.innerHTML = days_remaining + "d " + hours_remaining + "h " + minutes_remaining + "m " + seconds_remaining + "s left"
-			sticky.innerHTML = + days_remaining + "d " + hours_remaining + "h " + minutes_remaining + "m " + seconds_remaining + "s left"
 			
 			seconds_remaining--;
 			diff_seconds--;

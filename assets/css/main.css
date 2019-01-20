@@ -2303,6 +2303,10 @@
 }
 
 /* Participate (CFP submissions) page */
+.submissionCTA .link {
+  color: #c3fdff;
+}
+
 .submissionCTA {
   width: 100%;
   display: flex;
@@ -2314,7 +2318,8 @@
   letter-spacing: 0.3em;
   justify-content: center;
 }
-  .submissionCTA > span {
+  .submissionCTA > span,
+  .submissionCTA > p {
     -webkit-transform: scaleY(0.9);
             transform: scaleY(0.9);
   }

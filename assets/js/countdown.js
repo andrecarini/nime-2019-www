@@ -14,7 +14,7 @@ function setUpCountdown() {
 	sticky = document.getElementById("countdownSticky");
 	flow   = document.getElementById("countdownFlow");
 	
-	httpGetAsync("http://www.ufrgs.br/nime2019/assets/time", function(response) {
+	httpGetAsync("https://andrecarini.github.io/nime-2019-www/assets/time", function(response) {
 		
 		var time = new Date(response);
 		

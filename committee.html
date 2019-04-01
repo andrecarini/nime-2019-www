@@ -17,10 +17,10 @@
         gtag('config', 'UA-126620304-1');
       </script>
     
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main-01-04.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700" />
 	  
-	<meta property="og:url"                content="http://www.ufrgs.br/nime2019" />
+	  <meta property="og:url"                content="http://www.ufrgs.br/nime2019" />
     <meta property="og:title"              content="New Interfaces for Musical Expression | NIME 2019" />
     <meta property="og:type"               content="website" />
     <meta property="og:description"        content="The international conference dedicated to scientific research on the development of new technologies and their role in musical expression and artistic performance." />
@@ -38,23 +38,24 @@
             <span class="middle bar"></span>
             <span class="bottom bar"></span>
           </span>
+          <span id="navButtonText" class="menu_text visible">MENU</span>
         </a>
 
         <div id="navPanel">
-          <a class="panel-logo-anchor" href="index.html">
+          <div id="navNimeLogo" class="panel-logo-anchor">
             <img class="panel-logo" src="images/logos/top2_optimized.svg" />
-          </a>
+          </div>
           <nav>
             <ul>
-              <li class="cta-participate"><a href="participate.html">Submit</a></li>
+              <li class="cta-participate"><a href="register.html">Register</a></li>
               <li><a href="index.html">Home</a></li>
               <li><a href="schedule.html">Schedule</a></li>
-              <li><a href="location.html">Location</a></li>
+              <li><a href="location.html">Travel</a></li>
 			        <li><a href="keynotes.html">Keynotes</a></li>
               <li><a href="committee.html">Committee</a></li>
               <li><a href="partners.html">Partners</a></li>
+              <li><a href="participate.html">Authors</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a href="about.html">About</a></li>
             </ul>
           </nav>
           
@@ -74,15 +75,15 @@
           </a>
           <nav id="nav">
             <ul>
-              <li><a class="button" href="participate.html">Submit</a></li>
+              <li><a class="button" href="register.html">Register</a></li>
               <li><a href="index.html">Home</a></li>
               <li><a href="schedule.html">Schedule</a></li>
-              <li><a href="location.html">Location</a></li>
+              <li><a href="location.html">Travel</a></li>
               <li><a href="keynotes.html">Keynotes</a></li>
               <li><a href="committee.html">Committee</a></li>
               <li><a href="partners.html">Partners</a></li>
+              <li><a href="participate.html">Authors</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a href="about.html">About</a></li>
             </ul>
           </nav>
         </header>
@@ -105,34 +106,36 @@
             <div class="text committee">
               <p>NIME 2019 is hosted by the Institute of Informatics and the Institute of Arts at Federal University of Rio Grande do Sul, Porto Alegre, Brazil.</p>
 
-              <h3>General Chairs</h3>
+              <h4 class="subsection">General Chairs</h4>
               <p>Rodrigo Schramm (Federal University of Rio Grande do Sul)</p>
               <p>Marcelo Johann (Federal University of Rio Grande do Sul)</p>
 
-              <h3>Paper Chairs</h3>
+              <h4 class="subsection">Paper Chairs</h4>
+              <p>Marcelo Queiroz (University of São Paulo)</p>
               <p>Anna Xambó Sedó (Norwegian University of Science and Technology)</p>
-              <p>Marcelo Queiroz (Univeristy of São Paulo)</p>
 
-              <h3>Music Chairs</h3>
+              <h4 class="subsection">Music Chairs</h4>
               <p>Helena de Souza Nunes (Federal University of Rio Grande do Sul)</p>
               <p>Federico Visi (University of Hamburg)</p>
               <p>Luciano Zanatta (Federal University of Rio Grande do Sul)</p>
 
-              <h3>Artistic Installations Chairs</h3>
+              <h4 class="subsection">Artistic Installations Chairs</h4>
               <p>Alessandra Bochio (Federal University of Rio Grande do Sul)</p>
               <p>Felipe Merker Castellani (Federal University of Rio Grande do Sul)</p>
               <p>Isabel Nogueira (Federal University of Rio Grande do Sul)</p>
 
-              <h3>Workshop and Demo Chair</h3>
+              <h4 class="subsection">Workshop and Demo Chair</h4>
               <p>Flávio Schiavoni (Federal University of São Jão del Rei)</p>
               <p>Jim Tørresen (University of Oslo)</p>
               <p>Luiz Naveda (University of Minas Gerais)</p>
+              <p>Marcelo Walter (Federal University of Rio Grande do Sul) 
 
-              <h3>Student Volunteer Coordinator</h3>
+              <h4 class="subsection">Student Volunteer Coordinators</h4>
               <p>Filipe Lins (Federal University of Rio Grande do Sul)</p>
+              <p> Helena Carolina Wöhl Coelho   </p>
+              <p> Miguel Weber  </p>
 
-              <h3>Advisors</h3>
-              
+              <h4 class="subsection">Advisors</h4>
               <p>Damian Keller (Federal University of Acre)</p>
               <p>Eloy Fernando Fritsch (Federal University of Rio Grande do Sul)</p>
               <p>Leandro Costalonga (Federal University of Espirito Santo)</p>
@@ -144,8 +147,8 @@
               <p>Sarah Marie Astrid Bin (Georgia Institute of Technology)</p>
               <p>Tiago Fernandes Tavares (University of Campinas)</p>
               <p>Ximena Alarcón Diaz (University of Oslo)</p>
-              
-              <h3>Host</h3>
+             
+              <h4 class="subsection">Host</h4>
               <p>Federal University of Rio Grande do Sul</p>
             </div>
             
@@ -157,10 +160,14 @@
           <ul class="sponsors flex wrap center-horizontally">
             <li><a href="https://www.ufrgs.br/"                 ><img src="images/logos/LOGO_UFRGS_vertical_azul.png" /></a></li>
             <li><a href="https://www.ufrgs.br/institutodeartes" ><img src="images/logos/ia.png"                       /></a></li>
-            <li><a href="https://www.inf.ufrgs.br/"             ><img src="images/logos/inf.png"                      /></a></li>
+            <li><a href="http://www.inf.ufrgs.br/"              ><img src="images/logos/inf.png"                      /></a></li>
             <li><a href="https://www.inf.ufrgs.br/lcm/"         ><img src="images/logos/LCM_transparente.png"         /></a></li>
-            <li><a href="http://www.ufrgs.br/musicaeletronica/" ><img src="images/logos/CME_transparente.png"         /></a></li>
+            <li><a href="https://www.ufrgs.br/musicaeletronica/"><img src="images/logos/CME_transparente.png"         /></a></li>
+            <li><a href="http://www.sbc.org.br/"                ><img src="images/logos/Logo_SBC_Transparente.png"    /></a></li>
+            <li><a href="http://www.visiteportoalegre.com/"     ><img src="images/logos/Convention_Bureau.png"        /></a></li>
           </ul>
+          
+          <img id="flag-banner" src="images/flags/100pxH.png" />
           
           <div class="copyright flex vertical">
             <div class="links flex space-between wrap">
@@ -178,7 +185,7 @@
     </div>
 
     <!-- Scripts -->
-      <script src="assets/js/main.js"></script>
+      <script src="assets/js/main-01-04.js"></script>
 
   </body>
 </html>
